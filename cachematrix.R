@@ -1,7 +1,7 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Creates an inverse matrix and then stores the solution in a separate function. If the same matrix is called for,
+## the stored solved matrix is returned without the need for recalculation.
 
-## Write a short comment describing this function
+## Creates an inverse of a matrix and then returns a list of four functions
 
 makeCacheMatrix <- function(x = matrix()) {
         m <- NULL
@@ -17,7 +17,8 @@ makeCacheMatrix <- function(x = matrix()) {
              getsolve = getsolve)
 }
 
-## Write a short comment describing this function
+## Stores an inverse matrix. If solved matrix exists it will return it,
+## otherwise it will call makeCacheMatrix to create a new inverse matrix.
 
 cacheSolve <- function(x, ...) {
         m <- x$getsolve()
